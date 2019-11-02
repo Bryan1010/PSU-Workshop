@@ -4,7 +4,7 @@ const express = require('express'),
 // Creates Express Application
 const app = express();
 
-// 'use' function will trigger for any type of request (GET, POST, PUSH, etc) that matches the given route (first parameter)
+// 'use' function creates a listener that will trigger for any type of request (GET, POST, etc) that matches the given route
 // The second parameter is a function or router the request will be passed to
 // In this case, we are passing any request at /api/holidays to the router we are importing from './routes/holidays'
 app.use('/api/holidays', require('./routes/holidays'));
